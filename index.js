@@ -1,7 +1,10 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-
-const promptUser = [
+const SuperSVG = require("@svgdotjs/svg.js");
+const exp = require("express");
+const app = express();
+const svg = SVG();
+const prompts = [
   {
     type: "input",
     message: "What color would you like the logo to be?",
@@ -25,19 +28,11 @@ const promptUser = [
   }
 ];
 
-// TODO: Create a function to initialize app
-const init = () => {
-  promptUser()
-    .then(answers =>
-      fs.writeFile("logo.svg", generateREADME(answers), err => {
-        if (err) {
-          console.log(err);
-        }
-      })
-    )
-    .then(() => console.log("Successfully wrote to logo.svg"))
-    .catch(err => console.error(err));
-};
+// const generateSHAPE = ({
+//   Scolor,
+//   shape,
+//   letters,
+//   Tcolor
+// }) =>
 
-// Function call to initialize app
-init();
+fs.writeFileSync("logo.svg", svg.svg());
