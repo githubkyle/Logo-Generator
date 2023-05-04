@@ -32,9 +32,24 @@ const promptUser = () => {
     }
   ]);
 };
-
-const generateLogo = ({ answers.Scolor, answers.shape, answers.text, answers.Tcolor }) =>
-  SH.Shapeshifter(shape);
+const generateLogo = ({ Scolor, shape, text, Tcolor }) => {
+  const triangle = new Triangle();
+  const circle = new Circle();
+  const square = new Square();
+  switch (shape) {
+    case "Triangle":
+      return triangle.render(Scolor, Tcolor, text);
+      break;
+    case "Circle":
+      return circle.render(Scolor, Tcolor, text);
+      break;
+    case "Square":
+      return square.render(Scolor, Tcolor, text);
+      break;
+    default:
+      console.log("Please choose again");
+  }
+};
 
 const init = () => {
   promptUser()
@@ -50,20 +65,4 @@ const init = () => {
     .catch(err => console.error(err));
 };
 
-// const generateLogo = ({ Scolor, shape, letters, Tcolor }) => {
-//   promptUser()
-//     .then(answers =>
-//       fs.writeFile("Logo.svg", generateLogo(answers), err => {
-//         if (err) {
-//           console.log(err);
-//         }
-//       })
-//     )
-//     .then(() => console.log("Successfully wrote to README.md"))
-//     .catch(err => console.error(err));
-// };
-
-// Function call to initialize app
 init();
-
-// fs.writeFileSync("logo.svg", svg.svg());
