@@ -16,7 +16,7 @@ Follow the prompts, enter input and see your logo displayed.
 
 # Credits
 
-I'm the sole contributor to this project.
+I contributed the vast majority of this project myself and got the final nudge over the finish line from my teaching assistant Josh Hawks.
 
 # Licenses
 
