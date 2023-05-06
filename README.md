@@ -18,10 +18,12 @@ Follow the prompts, enter input and see your logo displayed.
 
 I contributed the vast majority of this project myself and got the final nudge over the finish line from my teaching assistant Josh Hawks.
 
+
+[Demo.webm](https://user-images.githubusercontent.com/43896355/236638425-b4820d01-8e23-43a4-b718-1eac6ba397da.webm)
+
 # Licenses
 
 The MIT License (MIT)
-
 Copyright (c) 2023 Kyle Schwent
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
